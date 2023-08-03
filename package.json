@@ -1,0 +1,14 @@
+{
+  "name": "nicoshow",
+  "version": "1.0.0",
+  "description": "get videos",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "danielton",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
