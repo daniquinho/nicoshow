@@ -29,7 +29,7 @@ const getXvideos = async (url) => {
   		duration: $(el).find('.thumb-under > .metadata > .bg > .duration').text(),
   		quality : $(el).find('.thumb-inside > .thumb > a > .video-hd-mark').text() ? $(el).find('.thumb-inside > .thumb > a > .video-hd-mark').text() : '360p',
   		low : '/low?url=' + encodeURIComponent(link),
-  		high : '/high?url=' + encodeURIComponent(link),
+  		download : '/high?url=' + encodeURIComponent(link),
   	}
   	videos.push(obj)
   })
