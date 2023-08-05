@@ -28,8 +28,8 @@ const getXvideos = async (url) => {
   		title: $(el).find('.thumb-under > .title > a').attr('title'),
   		duration: $(el).find('.thumb-under > .metadata > .bg > .duration').text(),
   		quality : $(el).find('.thumb-inside > .thumb > a > .video-hd-mark').text() ? $(el).find('.thumb-inside > .thumb > a > .video-hd-mark').text() : '360p',
-  		low : '/low?url=' + encodeURIComponent(link),
-  		download : '/high?url=' + encodeURIComponent(link),
+  		low : 'https://nicoshow.onrender.com/low?url=' + encodeURIComponent(link),
+  		download : 'https://nicoshow.onrender.com/high?url=' + encodeURIComponent(link),
   	}
   	videos.push(obj)
   })
@@ -84,7 +84,7 @@ const getBoyfriendVideos = async (search='', page=1) => {
   		img: $(el).find('.thumb-inner-wrapper > a > img').attr('src') ? $(el).find('.thumb-inner-wrapper > a > img').attr('src'): null,
   		quality: $(el).find('span.text-active.bold').text() || "360p",
   		duration: dur.trim() || '00:00',
-  		download: '/downloadBoyfriend?url=' + encodeURIComponent(link)
+  		download: 'https://nicoshow.onrender.com/downloadBoyfriend?url=' + encodeURIComponent(link)
   	})
   })
   return videos;
